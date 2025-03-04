@@ -55,6 +55,38 @@ npm run build
 yarn build
 ```
 
+## Docker Support
+
+This application is containerized using Docker. You can run it using Docker or Docker Compose.
+
+### Using Docker
+
+1. Build the Docker image:
+```bash
+docker build -t uniswap-v3-calculator .
+```
+
+2. Run the container:
+```bash
+docker run -p 8080:80 uniswap-v3-calculator
+```
+
+3. Open your browser and navigate to `http://localhost:8080`
+
+### Using Docker Compose
+
+1. Start the application:
+```bash
+docker-compose up -d
+```
+
+2. Open your browser and navigate to `http://localhost:8080`
+
+3. Stop the application:
+```bash
+docker-compose down
+```
+
 ## Technology Stack
 
 - React
